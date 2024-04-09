@@ -1,0 +1,63 @@
+
+.container {
+  display: flex;
+  width: 30%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  display: block;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+     
+.card-date-domain {
+  display: grid;
+  justify-content: space-between;
+  margin-bottom: 8px;
+ background-color: #f0eeee;
+}
+
+.card-date, .card-domain,.card-likes {
+  font-size: 14px;
+  color: #888;
+  
+}
+
+.card-text {
+  font-size: 16px;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 50px; /* Adjust as needed */
+  transition: max-height 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.card-text.expanded {
+  max-height: none;
+}
